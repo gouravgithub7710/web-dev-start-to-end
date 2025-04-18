@@ -1,0 +1,9 @@
+
+#box{
+  height: 100vh;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+background-image: url(https://img.freepik.com/free-photo/3d-shapes-glowing-with-bright-holographic-colors_23-2151037177.jpg?semt=ais_hybrid&w=740);
+
+background-size:cover;
+}
