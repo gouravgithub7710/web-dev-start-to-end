@@ -60,41 +60,53 @@
 //     </div>
 //   );
 
- 
+ //
 // }
 // export default App; 
 
 
 //next example---------
 
-import React, { useState } from 'react';
-const App=()=>{
- const [Num, setNum] = useState(0);
+// import React, { useState } from 'react';
+// const App=()=>{
+//  const [Num, setNum] = useState(0);
 
- const Increment=()=>{
-  setNum(Num+1);
- }
-  const Decrement=()=>{
-  if(Num>0)
-  {
-    setNum(Num-1);
-  }
-  else{
-    alert("Number is already zero");
-  }
-  }
-  const Reset=()=>{
-    setNum(0);
-  }
-  return(
-    <div>
-  <h1>
-    Num is:{Num}
-  </h1>
-  <button onClick={Increment}>Increment</button>
-  <button onClick={Decrement}>Decrement</button>
-  <button onClick={Reset}>Reset</button>
-    </div>
-  );
+//  const Increment=()=>{
+//   setNum(Num+1);
+//  }
+//   const Decrement=()=>{
+//   if(Num>0)
+//   {
+//     setNum(Num-1);
+//   }
+//   else{
+//     alert("Number is already zero");
+//   }
+//   }
+//   const Reset=()=>{
+//     setNum(0);
+//   }
+//   return(
+//     <div>
+//   <h1>
+//     Num is:{Num}
+//   </h1>
+//   <button onClick={Increment}>Increment</button>
+//   <button onClick={Decrement}>Decrement</button>
+//   <button onClick={Reset}>Reset</button>
+//     </div>
+//   );
+// }
+// export default App;
+
+
+//apply css--------------------------------------------
+
+import React, { useState } from 'react';
+
+const App=()=>{
+return(
+  <div className='text-5xl text-black bg-blue-900'>APP</div>
+);
 }
 export default App;
