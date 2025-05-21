@@ -30,22 +30,35 @@
 // export default app;
 
 
-import React, { useState } from 'react';
+//-------use state example-------------------------------------------------
 
-const App=()=>{
-  const [a, seta] = useState(10);
+// import React, { useState } from 'react';
 
-  const changeA=()=>{
-    console.log(a);
-    seta(20);
-    console.log(a); 
-  }
-  return (
-    <div>
-    <h1>Value of a is:{a}</h1>
-    <button onClick={changeA}>Change A</button>
-    </div>
-  );
-}
-export default App; 
+// const App=()=>{
+//   const [a, seta] = useState(10);
+
+//   const [b, setb] = useState("Gourav")
+
+//   const changeA=()=>{
+//     console.log(a);
+//     seta(20);
+//     console.log(a); 
+//   }
+//   const changeB=()=>{
+//     console.log(b);
+//     setb("Gourav Goswami");
+//     console.log(b); 
+//   }
+//   return (
+//     <div>
+//     <h1>Value of a is:{a}</h1>
+//     <h1>Value of b is:{b}</h1>
+//     <button onClick={changeA}>Change A</button>
+//     <button onClick={changeB}>Change B</button>
+//     </div>
+//   );
+
+ 
+// }
+// export default App; 
 
