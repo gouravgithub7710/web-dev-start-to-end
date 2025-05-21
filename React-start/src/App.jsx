@@ -100,13 +100,17 @@
 // export default App;
 
 
-//apply css--------------------------------------------
+//apply tailwind css--------------------------------------------
 
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
-const App=()=>{
-return(
-  <div className='text-5xl text-black bg-blue-900'>APP</div>
-);
-}
-export default App;
+// const App=()=>{
+// return(
+//   <div className='text-5xl text-pink-300 bg-blue-900 border-2 border-dotted '>APP</div>
+// );
+// }
+// export default App;
+
+
+
+
