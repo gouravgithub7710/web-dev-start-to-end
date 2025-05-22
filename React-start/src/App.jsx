@@ -113,33 +113,50 @@
 
 
 //---form example---------------------------------------------------
- import React, { useState } from 'react';
-const App=()=>{
+//  import React, { useState } from 'react';
+// const App=()=>{
 
-  const [UserName, setUserName] = useState('')
+//   const [UserName, setUserName] = useState('')
 
-  const submitHandler=(e)=>{
-   e.preventDefault();
-   console.log(UserName);
-    setUserName('');
+//   const submitHandler=(e)=>{
+//    e.preventDefault();
+//    console.log(UserName);
+//     setUserName('');
 
-  }
+//   }
 
-  return (
-    <div>
-      <form onSubmit={(e)=>{submitHandler(e)}}>
-        <input value={UserName} onChange={(e)=>{
-          setUserName(e.target.value);
-        }} 
+//   return (
+//     <div>
+//       <form onSubmit={(e)=>{submitHandler(e)}}>
+//         <input value={UserName} onChange={(e)=>{
+//           setUserName(e.target.value);
+//         }} 
         
-        className='m-3 p-2 rounded-md'  type="text" placeholder='Enter your Name'/>
-        <button className='bg-blue-500 text-white p-2 rounded-md'>Submit</button>
+//         className='m-3 p-2 rounded-md'  type="text" placeholder='Enter your Name'/>
+//         <button className='bg-blue-500 text-white p-2 rounded-md'>Submit</button>
   
-      </form>
-    </div>
-  );
+//       </form>
+//     </div>
+//   );
+// }
+// export default App;
+
+//fragments:-empty tags  in react js --------------------
+import React from 'react';
+const App=()=>{
+return(
+  <>
+    <h1>
+      Hello, Gourav
+    </h1>
+    <h1>
+      Hello, Gourav Goswami
+    </h1>
+  </>
+);
 }
-export default App;
+export default App; 
+
 
 
 
