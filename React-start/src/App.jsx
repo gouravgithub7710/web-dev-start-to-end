@@ -170,8 +170,12 @@ const App=()=>{
   return(
 <>
 <Nevbar/>
-<Card user='Gourav' />
-<Card user='Gourvi' />
+{/* <Card user='Gourav' />
+<Card user='Gourvi' /> */}
+<div className='p-5 flex '> 
+<Card user="Gourav"  city="Indore" />
+<Card user='Gourav' city='Indore' />
+</div>
 <Footer/>
     </>
   );
