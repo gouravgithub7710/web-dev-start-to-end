@@ -142,20 +142,38 @@
 // export default App;
 
 //fragments:-empty tags  in react js --------------------
+// import React from 'react';
+// const App=()=>{
+// return(
+//   <>
+//     <h1>
+//       Hello, Gourav
+//     </h1>
+//     <h1>
+//       Hello, Gourav Goswami
+//     </h1>
+//   </>
+// );
+// }
+// export default App; 
+
+
+//components in react js --------------------------
+
 import React from 'react';
-const App=()=>{
-return(
-  <>
-    <h1>
-      Hello, Gourav
-    </h1>
-    <h1>
-      Hello, Gourav Goswami
-    </h1>
-  </>
-);
+import Nevbar from './Components/Nevbar';
+import Footer from './Components/Footer';
+
+const App=()=>{ 
+  return(
+<>
+<Nevbar/>
+
+<Footer/>
+    </>
+  );
 }
-export default App; 
+export default App;
 
 
 
