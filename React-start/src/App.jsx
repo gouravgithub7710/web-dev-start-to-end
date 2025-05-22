@@ -166,15 +166,55 @@ import Footer from './Components/Footer';
 import Card from './Components/Card';
 
 const App=()=>{
-  
+
+  const user =[
+  {
+    "name": "Aarav Mehta",
+    "age": 28,
+    "city": "Mumbai",
+    "profession": "Software Engineer",
+    "photo": "https://randomuser.me/api/portraits/men/75.jpg"
+  },
+  {
+    "name": "Riya Sharma",
+    "age": 24,
+    "city": "Delhi",
+    "profession": "Graphic Designer",
+    "photo": "https://randomuser.me/api/portraits/women/65.jpg"
+  },
+  {
+    "name": "Kunal Verma",
+    "age": 32,
+    "city": "Bangalore",
+    "profession": "Data Analyst",
+    "photo": "https://randomuser.me/api/portraits/men/47.jpg"
+  },
+  {
+    "name": "Neha Kapoor",
+    "age": 27,
+    "city": "Pune",
+    "profession": "Digital Marketer",
+    "photo": "https://randomuser.me/api/portraits/women/58.jpg"
+  },
+  {
+    "name": "Ishaan Joshi",
+    "age": 30,
+    "city": "Hyderabad",
+    "profession": "Product Manager",
+    "photo": "https://randomuser.me/api/portraits/men/62.jpg"
+  }
+]  
   return(
 <>
 <Nevbar/>
 {/* <Card user='Gourav' />
 <Card user='Gourvi' /> */}
-<div className='p-5 flex '> 
-<Card user="Gourav"  city="Indore" />
-<Card user='Gourav' city='Indore' />
+<div className='p-5 flex justify-center'> 
+
+{user.map(function(e){
+  return <Card  name={e.name} age={e.age} city={e.city} profession={e.profession} photo={e.photo} />
+})}
+
 </div>
 <Footer/>
     </>
