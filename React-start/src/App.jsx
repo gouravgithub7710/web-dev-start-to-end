@@ -163,12 +163,15 @@
 import React from 'react';
 import Nevbar from './Components/Nevbar';
 import Footer from './Components/Footer';
+import Card from './Components/Card';
 
-const App=()=>{ 
+const App=()=>{
+  
   return(
 <>
 <Nevbar/>
-
+<Card user='Gourav' />
+<Card user='Gourvi' />
 <Footer/>
     </>
   );
