@@ -158,69 +158,109 @@
 // export default App; 
 
 
-//components in react js --------------------------
+//props in react js --------------------------
 
-import React from 'react';
-import Nevbar from './Components/Nevbar';
-import Footer from './Components/Footer';
-import Card from './Components/Card';
+// import React from 'react';
+// import Nevbar from './Components/Nevbar';
+// import Footer from './Components/Footer';
+// import Card from './Components/Card';
 
-const App=()=>{
+// const App=()=>{
 
-  const user =[
-  {
-    "name": "Aarav Mehta",
-    "age": 28,
-    "city": "Mumbai",
-    "profession": "Software Engineer",
-    "photo": "https://randomuser.me/api/portraits/men/75.jpg"
-  },
-  {
-    "name": "Riya Sharma",
-    "age": 24,
-    "city": "Delhi",
-    "profession": "Graphic Designer",
-    "photo": "https://randomuser.me/api/portraits/women/65.jpg"
-  },
-  {
-    "name": "Kunal Verma",
-    "age": 32,
-    "city": "Bangalore",
-    "profession": "Data Analyst",
-    "photo": "https://randomuser.me/api/portraits/men/47.jpg"
-  },
-  {
-    "name": "Neha Kapoor",
-    "age": 27,
-    "city": "Pune",
-    "profession": "Digital Marketer",
-    "photo": "https://randomuser.me/api/portraits/women/58.jpg"
-  },
-  {
-    "name": "Ishaan Joshi",
-    "age": 30,
-    "city": "Hyderabad",
-    "profession": "Product Manager",
-    "photo": "https://randomuser.me/api/portraits/men/62.jpg"
+//   const user =[
+//   {
+//     "name": "Aarav Mehta",
+//     "age": 28,
+//     "city": "Mumbai",
+//     "profession": "Software Engineer",
+//     "photo": "https://randomuser.me/api/portraits/men/75.jpg"
+//   },
+//   {
+//     "name": "Riya Sharma",
+//     "age": 24,
+//     "city": "Delhi",
+//     "profession": "Graphic Designer",
+//     "photo": "https://randomuser.me/api/portraits/women/65.jpg"
+//   },
+//   {
+//     "name": "Kunal Verma",
+//     "age": 32,
+//     "city": "Bangalore",
+//     "profession": "Data Analyst",
+//     "photo": "https://randomuser.me/api/portraits/men/47.jpg"
+//   },
+//   {
+//     "name": "Neha Kapoor",
+//     "age": 27,
+//     "city": "Pune",
+//     "profession": "Digital Marketer",
+//     "photo": "https://randomuser.me/api/portraits/women/58.jpg"
+//   },
+//   {
+//     "name": "Ishaan Joshi",
+//     "age": 30,
+//     "city": "Hyderabad",
+//     "profession": "Product Manager",
+//     "photo": "https://randomuser.me/api/portraits/men/62.jpg"
+//   }
+// ]  
+//   return(
+// <>
+// <Nevbar/>
+// {/* <Card user='Gourav' />
+// <Card user='Gourvi' /> */}
+// <div className='p-5 flex justify-center'> 
+
+// {user.map(function(e){
+//   return <Card  name={e.name} age={e.age} city={e.city} profession={e.profession} photo={e.photo} />
+// })}
+
+// </div>
+// <Footer/>
+//     </>
+//   );
+// }
+// export default App;
+
+
+//API-data fetching example--------------------------------
+
+//import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios';
+
+const App = () => {
+
+  const [data, setData] = useState([]);
+
+  const getData = async ()=>{
+   const response = await axios.get('https://picsum.photos/v2/list')
+
+  setData(response.data);
+   
   }
-]  
-  return(
-<>
-<Nevbar/>
-{/* <Card user='Gourav' />
-<Card user='Gourvi' /> */}
-<div className='p-5 flex justify-center'> 
+  return (
+    <div className='p-10'>
+      <button onClick={getData} className='bg-indigo-800 rounded-md m-2 font-semibold text-2xl active:scale-95 px-6 py-3'>Get Data</button>
+      <div className='p-5 mt-5 bg-gray-950'>
+      {data.map(function(e,idx){
+        return(
+          <div key={idx} className='bg-gray-50 text-black flex items-center justify-center w-full px-7 py-6 rounded mb-5'>
 
-{user.map(function(e){
-  return <Card  name={e.name} age={e.age} city={e.city} profession={e.profession} photo={e.photo} />
-})}
-
-</div>
-<Footer/>
-    </>
-  );
+            <img src={e.download_url}/>
+          </div>
+        )
+      })}
+       </div>
+    </div>
+  )
 }
-export default App;
+
+export default App
+
+
+
+
 
 
 

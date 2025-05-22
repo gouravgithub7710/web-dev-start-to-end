@@ -1,5 +1,6 @@
 import React from 'react'
 
+//components in react js + props-------------------------
 const Card = (props) => {
   
   return (
