@@ -262,46 +262,47 @@
 
 
 
-//--UseEffect using in API-data fetching example--------------------------------
-import axios from 'axios';
-import React, { useEffect,useState} from 'react'
+// //--UseEffect using in API-data fetching example--------------------------------
+// import axios from 'axios';
+// import React, { useEffect,useState} from 'react'
 
-const App = () => {
+// const App = () => {
 
-    const [data, setData] = useState([]);
+//     const [data, setData] = useState([]);
 
-  const getData = async ()=>{
-   const response = await axios.get('https://picsum.photos/v2/list')
+//   const getData = async ()=>{
+//    const response = await axios.get('https://picsum.photos/v2/list')
 
-  setData(response.data);
+//   setData(response.data);
    
-  }
+//   }
 
-  useEffect(() => {
-    getData()
-  }, [])
+//   useEffect(() => {
+//     getData()
+//   }, [])
   
 
-  return (
-    <div className='p-10'>
-      {/* <button onClick={getData} className='bg-indigo-800 rounded-md m-2 font-semibold text-2xl active:scale-95 px-6 py-3'>Get Data</button> */}
-      <div className='p-5 mt-5 bg-gray-950'>
-      {data.map(function(e,idx){
-        return(
-          <div key={idx} className='bg-gray-50 text-black flex items-center justify-center w-full px-7 py-6 rounded mb-5'>
+//   return (
+//     <div className='p-10'>
+//       {/* <button onClick={getData} className='bg-indigo-800 rounded-md m-2 font-semibold text-2xl active:scale-95 px-6 py-3'>Get Data</button> */}
+//       <div className='p-5 mt-5 bg-gray-950'>
+//       {data.map(function(e,idx){
+//         return(
+//           <div key={idx} className='bg-gray-50 text-black flex items-center justify-center w-full px-7 py-6 rounded mb-5'>
 
-            <img src={e.download_url}/>
-          </div>
-        )
-      })}
-       </div>
-    </div>
-  )
-}
+//             <img src={e.download_url}/>
+//           </div>
+//         )
+//       })}
+//        </div>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
+//React-toastify-----use for notification-------------------
 
 
 
