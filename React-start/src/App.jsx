@@ -307,30 +307,35 @@
 
 //React router dom -------------------------------------------------
 
-import React from 'react'
-import { Routes, Route } from 'react-router-dom';
-import About from './pages/About';
-import Product from './pages/Product';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Nev from './Components/Nev';
+// import React from 'react'
+// import { Routes, Route } from 'react-router-dom';
+// import About from './pages/About';
+// import Product from './pages/Product';
+// import Home from './pages/Home';
+// import Contact from './pages/Contact';
+// import Nev from './Components/Nev';
 
-const App = () => {
-  return (
-    <div>
-    <Nev/>
-      <Routes>
-        <Route path='/About' element={<About/>}/>
-        <Route path='/Product' element={<Product/>}/>
-        <Route path='/' element={<Home/>}/> 
-        <Route path='/Contact' element={<Contact/>}/>
-      </Routes>
+// const App = () => {
+//   return (
+//     <div>
+//     <Nev/>
+//       <Routes>
+//         <Route path='/About' element={<About/>}/>
+//         <Route path='/Product' element={<Product/>}/>
+//         <Route path='/' element={<Home/>}/> 
+//         <Route path='/Contact' element={<Contact/>}/>
+//       </Routes>
   
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
+
+
+
+//context api example------------------------------------------------
+
 
 
 
