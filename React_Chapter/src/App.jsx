@@ -51,3 +51,21 @@ const App = () => {
 }
 
 export default App
+
+//use onclick to handle button click
+// import React from 'react'     
+
+// const App = () => {
+//   const handleClick = () => {    
+//     console.log("Button clicked");
+//   }
+//   return (
+
+//     <div>
+//       <h1>Click the button</h1>
+//       <button onClick={handleClick}>Click Me</button>
+//     </div>
+//   )    
+// }
+// export default App
+
