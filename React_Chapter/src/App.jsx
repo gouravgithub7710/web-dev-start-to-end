@@ -24,6 +24,8 @@
 // export default App
 
 
+//use onsubmit to handle form submission
+
 import React from 'react'
 
 const App = () => {
@@ -39,7 +41,7 @@ const App = () => {
     <div>
       <h1>Fill the form</h1>
       <form onSubmit={handleSubmit}>
-      
+
         <input type="email" placeholder="Enter your email"/>
         <input type="password" placeholder="Enter your password"/>
         <button type="submit">Submit</button>
