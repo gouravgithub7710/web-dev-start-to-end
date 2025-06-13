@@ -53,19 +53,38 @@
 // export default App
 
 //use onclick to handle button click
-import React from 'react'     
+// import React from 'react'     
+
+// const App = () => {
+//   const handleClick = () => {    
+//     console.log("Button clicked");
+//   }
+//   return (
+
+//     <div>
+//       <h1>Click the button</h1>
+//       <button onClick={handleClick}>Click Me</button>
+//     </div>
+//   )    
+// }
+// export default App
+
+//rafe for react components
+//const implement up side of the return statement
+import React from 'react'
 
 const App = () => {
-  const handleClick = () => {    
-    console.log("Button clicked");
-  }
+  const course = "React Basics";
   return (
-
     <div>
-      <h1>Click the button</h1>
-      <button onClick={handleClick}>Click Me</button>
-    </div>
-  )    
-}
-export default App
+    <h1>APP</h1>
 
+    <h2>Course: {course}</h2>
+    <p>This is a simple React component.</p>
+    <p>Welcome to the course!</p>
+    <p>Enjoy learning React!</p>
+    </div>
+  )
+}
+
+export default App
