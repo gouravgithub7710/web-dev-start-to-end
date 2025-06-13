@@ -75,16 +75,32 @@ import React from 'react'
 
 const App = () => {
   const course = "React Basics";
+  const person = {
+    name: "John Doe",
+    age: 30,
+    email: "John@gmail.com"}
+
+
   return (
     <div>
     <h1>APP</h1>
 
     <h2>Course: {course}</h2>
     <p>This is a simple React component.</p>
-    <p>Welcome to the course!</p>
-    <p>Enjoy learning React!</p>
+    {/* <p>Welcome to the course!</p>
+    <p>Enjoy learning React!</p> */}
+<>------------------------------------------------------</>
+    <h3>Person Details:</h3>
+    <p>Name: {person.name}</p>
+    <p>Age: {person.age}</p>
+    <p>Email: {person.email}</p>
+    <p>Thank you for joining!</p>
+    <p>Have a great day!</p>
+    <p>Feel free to explore more!</p>
     </div>
   )
 }
 
 export default App
+
+
