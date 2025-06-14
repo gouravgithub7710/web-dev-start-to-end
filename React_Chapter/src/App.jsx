@@ -75,8 +75,8 @@
 import React from 'react'
 import Person from './Person'
 //import { Test } from './components/Test'
-import Test from './components/Test'
-
+// import Test from './components/Test'
+import Test from './components/test'
 const App = () => {
   return (
   <>
