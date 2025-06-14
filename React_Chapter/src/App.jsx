@@ -103,18 +103,36 @@
 
 
 //&& operator example  ()?():() ternary operator example
+// import React from 'react'
+// import Person from './components/Person'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Person name="Gourav" age={22}/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+// fecth user data from mannual create API
+
 import React from 'react'
-import Person from './components/Person'
+import UserData from './components/UserData'
 
 const App = () => {
   return (
     <div>
-      <Person name="Gourav" age={22}/>
+      <UserData/>
     </div>
   )
 }
 
 export default App
+
 
 
 
