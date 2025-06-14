@@ -1,9 +1,25 @@
+//rafc function component example
+// import React from 'react'
+
+// export const Test = () => {
+//   return (
+//     <div>Test using rafc function </div>
+//   )
+// }
+
+
+//rafce arrow function component example
+
 import React from 'react'
 
-export const Test = () => {
+const test = () => {
   return (
-    <div>Test using rafc function </div>
+    <div>
+      <div>Test using rafce function </div>
+    </div>
   )
 }
+
+export default test
 
 

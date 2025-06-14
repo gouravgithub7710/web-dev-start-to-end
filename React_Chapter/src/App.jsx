@@ -74,12 +74,15 @@
 //<></> empty open and close tags 
 import React from 'react'
 import Person from './Person'
-import { Test } from './components/Test'
+//import { Test } from './components/Test'
+import Test from './components/Test'
+
 const App = () => {
   return (
   <>
     {/* <Person/> */}
     <Test/>
+
   </>  
     
   )
