@@ -77,12 +77,19 @@ import Person from './Person'
 //import { Test } from './components/Test'
 // import Test from './components/Test'
 import Test from './components/test'
+import Product from './components/Product'
 const App = () => {
   return (
   <>
     {/* <Person/> */}
-    <Test/>
-
+    {/* <Test/> */}
+    <Product name="I phone" price="75000" year="2022"/>
+    <Product name="Samsung Galaxy" price="65000" year="2023"/>
+    <Product name="One Plus" price="45000" year="2023"/>
+    <Product name="Google Pixel" price="55000" year="2023"/>
+    <Product name="Oppo" price="35000" year="2023"/>
+    <Product name="Vivo" price="30000" year="2023"/>
+    <Product name="Realme" price="25000" year="2023"/>
   </>  
     
   )
