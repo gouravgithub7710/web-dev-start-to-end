@@ -1,5 +1,6 @@
 import React from 'react'
 
+//show person data as mentioned in the below
 const Person = () => {
    const course = "React Basics";
   const person = {
