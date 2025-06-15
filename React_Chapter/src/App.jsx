@@ -120,18 +120,18 @@
 
 // fecth user data from mannual create API
 
-import React from 'react'
-import UserData from './components/UserData'
+// import React from 'react'
+// import UserData from './components/UserData'
 
-const App = () => {
-  return (
-    <div>
-      <UserData/>
-    </div>
-  )
-}
+// const App = () => {
+//   return (
+//     <div>
+//       <UserData/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 
