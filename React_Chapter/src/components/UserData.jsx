@@ -3,7 +3,7 @@ import UserCard from './components/UserCard.jsx';
 
 function UserData() {
   const [users, setUsers] = useState([]);
-
+// fetch form indianUsers.json avaliable in the public folder 
   useEffect(() => {
     fetch('/indianUsers.json') // local file in public folder
       .then(res => res.json())
