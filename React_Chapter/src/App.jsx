@@ -137,11 +137,12 @@
 // form events, button click events, onsubmit events, onclick events
 
 import React from 'react'
+import Events from './components/Events'
 
 const App = () => {
   return (
     <div>
-      APP is the entry point of the application
+      <Events />
     </div>
   )
 }
