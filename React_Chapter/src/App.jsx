@@ -133,21 +133,39 @@
 
 // export default App
 
+
+
 //Events in React example:
 // form events, button click events, onsubmit events, onclick events
 
+// import React from 'react'
+// import Events from './components/Events'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Events />
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// useState hook example
 import React from 'react'
-import Events from './components/Events'
+import Counter from './components/Counter'
 
 const App = () => {
   return (
     <div>
-      <Events />
+      <Counter />
     </div>
   )
 }
 
 export default App
+
 
 
 
