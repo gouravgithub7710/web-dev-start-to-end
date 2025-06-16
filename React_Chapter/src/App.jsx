@@ -138,7 +138,7 @@ import React from 'react'
 const App = () => {
   return (
     <div>
-      
+      APP is the entry point of the application
     </div>
   )
 }
