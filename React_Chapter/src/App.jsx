@@ -133,6 +133,8 @@
 
 // export default App
 
+//Events in React example:
+
 import React from 'react'
 
 const App = () => {
