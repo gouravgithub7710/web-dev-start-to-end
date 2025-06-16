@@ -134,6 +134,7 @@
 // export default App
 
 //Events in React example:
+// form events, button click events, onsubmit events, onclick events
 
 import React from 'react'
 
