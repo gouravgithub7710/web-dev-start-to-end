@@ -153,20 +153,33 @@
 
 
 // useState hook example
-import React from 'react'
-import Counter from './components/Counter'
+// import React from 'react'
+// import Counter from './components/Counter'
 
+// const App = () => {
+//   return (
+//     <div>
+//       <Counter />
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+//Map example 
+
+import React from 'react'
+import Map_Product from './components/Map_Product'
 const App = () => {
   return (
     <div>
-      <Counter />
+      <Map_Product/>
     </div>
   )
 }
 
 export default App
-
-
-
 
 
