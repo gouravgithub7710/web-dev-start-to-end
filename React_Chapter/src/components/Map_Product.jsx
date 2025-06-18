@@ -43,12 +43,12 @@ const Map_Product = () => {
     "university": "BITS Pilani"
   },]
 
-  return (
+  return ( //using map method to iterate over product_Data array
     <div>
       {product_Data.map(data => (
         <div key={data.id} style={{ border: '1px solid #ccc', padding: '10px', margin: '10px', borderRadius: '8px' }}>
           <img src={data.image} alt={`${data.firstName} ${data.lastName}`} style={{ width: '80px', borderRadius: '50%' }} />
-          <h3>{data.firstName} {data.lastName}</h3>
+          <h3>Name:{data.firstName} {data.lastName}</h3>
           <p><strong>Title:</strong> {data.company.title}</p>
           <p><strong>Salary:</strong> ₹{data.company.salary.toLocaleString()}</p>
           <p><strong>University:</strong> {data.university}</p>
