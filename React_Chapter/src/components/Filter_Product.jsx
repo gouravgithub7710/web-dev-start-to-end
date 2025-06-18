@@ -48,7 +48,15 @@ const Filter_Product = () => {
     console.log(filter_Data);
     return (
       <div>
-      {filter_Data.map(data=>(<div key={data.id}> <img src={data.image}></img><h1>{data.lastName}</h1></div>))}
+      {filter_Data.map(data=>(<div key={data.id}> 
+      <img src={data.image}></img>
+      <h1>{data.lastName}</h1>
+      <h2>{data.company.title}</h2>
+      <h3>{data.company.salary}</h3>
+      <h4>Collage:{data.university}</h4>
+      <h5>Name:{data.firstName}</h5>
+
+      </div>))}
       </div>
   )
 }
