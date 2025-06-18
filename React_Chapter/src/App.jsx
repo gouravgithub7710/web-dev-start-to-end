@@ -184,20 +184,33 @@
 
 
 //filter using for showing data 
+// import React from 'react'
+// import Map_Product from './components/Map_Product'
+// import Filter_Product from './components/Filter_Product'
+
+// const App = () => {
+//   return (
+//     <div>
+//     <Map_Product/>
+//       {/* <Filter_Product/> */}
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Map_Product from './components/Map_Product'
-import Filter_Product from './components/Filter_Product'
 
 const App = () => {
   return (
     <div>
-    <Map_Product/>
-      {/* <Filter_Product/> */}
+      App Component
     </div>
   )
 }
 
 export default App
+
 
 
 
