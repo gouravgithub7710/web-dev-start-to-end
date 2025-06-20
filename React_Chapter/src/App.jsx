@@ -207,8 +207,7 @@ const App = () => {
 
   useEffect(() => {
   getPosts()
-  .then(posts=>console.log(posts);
-  )
+  .then(posts=>console.log(posts))
   }, [])
   
   return (
