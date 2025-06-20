@@ -1,4 +1,4 @@
-
+import './index.css'
 //Count Increment and Reset Example
 // import React from 'react'
 
@@ -200,9 +200,11 @@
 // export default App
 
 //Api calling example using fetch
-import React, { use } from 'react'
+// 
 import {useEffect,useState} from 'react'
 import { getPosts } from './API'
+import PostCard from './components/PostCard'
+
 const App = () => {
 
   const [data, setdata] = useState(null)
@@ -214,7 +216,7 @@ const App = () => {
   
   return (
     <div>
-      {data ? data.map((e)=><p>Title:{e.title}</p>) : <p>No Data</p>}
+      {data ? data.map((e)=><PostCard title={e.title} body={e.body}/>) : <p>No Data</p>}
     </div>
   )
 }
