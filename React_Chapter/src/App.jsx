@@ -200,23 +200,42 @@ import './index.css'
 // export default App
 
 //Api calling example using fetch
-// 
+
+
 import {useEffect,useState} from 'react'
-import { getPosts } from './API'
+import { getPosts,getRandomUser} from './API'
 import PostCard from './components/PostCard'
+import RandomUserCard from './components/RandomUserCard'
 
 const App = () => {
 
   const [data, setdata] = useState(null)
-
+  const [RandomUserData,setRandomUserData]=useState(null)
+  //--for example-1
   useEffect(() => {
   getPosts()
   .then(posts=>setdata(posts))
   }, [])
   
+  //for example-2
+  useEffect(() => {
+   getRandomUser()
+   .then(user => setRandomUserData(user.results[0])
+   )
+  }, [])
+  
+const refresh=()=>{
+   getRandomUser()
+   .then(user => setRandomUserData(user.results[0]))
+}
+
   return (
     <div>
-      {data ? data.map((e)=><PostCard title={e.title} body={e.body}/>) : <p>No Data</p>}
+   <div className='Random-user'>
+     {RandomUserData && <RandomUserCard data={RandomUserData}/>}
+    <button className='button' onClick={refresh}>Refresh User</button>
+   </div>
+      {data ? data.map((e)=><PostCard key={e.id} title={e.title} body={e.body}/>) : <p>No Data</p>}
     </div>
   )
 }
