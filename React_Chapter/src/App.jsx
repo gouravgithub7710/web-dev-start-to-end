@@ -205,14 +205,16 @@ import {useEffect,useState} from 'react'
 import { getPosts } from './API'
 const App = () => {
 
+  const [data, setdata] = useState(null)
+
   useEffect(() => {
   getPosts()
-  .then(posts=>console.log(posts))
+  .then(posts=>setdata(posts))
   }, [])
   
   return (
     <div>
-      App Component
+      {data ? data.map((e)=><p>Title:{e.title}</p>) : <p>No Data</p>}
     </div>
   )
 }
