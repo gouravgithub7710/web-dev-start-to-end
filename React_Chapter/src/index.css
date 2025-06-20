@@ -16,3 +16,14 @@ body{
 .button:hover {
   background: #0056b3;
 }
+
+.post-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.post-card g {
+  color: #007bff;
+}
