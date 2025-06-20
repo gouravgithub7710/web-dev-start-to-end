@@ -24,6 +24,31 @@ body{
   padding: 20px;
   margin: 20px 0;
 }
-.post-card g {
-  color: #007bff;
+
+.Random-user {
+  align-items: center;
+  justify-content: center;
+background-color: #1a1a1a;
+ border: 1px solid #333;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  margin-left: 40%;
+}
+ .Random-user img{
+  border-radius: 50%;
+  margin-left: 18%;
+  border: 4px solid rgba(197, 38, 197, 0.685);
+}
+.Random-user h3,p{
+  
+  align-items: center;
+  justify-content: center;
+  margin-left: 32%;
+}
+.Random-user button{
+  margin-left: 12%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
