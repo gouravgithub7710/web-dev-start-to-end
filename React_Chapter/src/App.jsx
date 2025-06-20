@@ -199,9 +199,18 @@
 
 // export default App
 
-import React from 'react'
-
+//Api calling example using fetch
+import React, { use } from 'react'
+import {useEffect,useState} from 'react'
+import { getPosts } from './API'
 const App = () => {
+
+  useEffect(() => {
+  getPosts()
+  .then(posts=>console.log(posts);
+  )
+  }, [])
+  
   return (
     <div>
       App Component
