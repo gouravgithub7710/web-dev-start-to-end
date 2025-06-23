@@ -245,28 +245,43 @@ import './index.css'
 
 // use effect hook example 
 
-import { useEffect,useState} from 'react'
-import React from 'react'
+// import { useEffect,useState} from 'react'
+// import React from 'react'
 
-const App = () => {
-const [Counter, setCounter] = useState(0)
-  useEffect(() => {
-    document.title=Counter
-  console.log('useeffect hook is running');
+// const App = () => {
+// const [Counter, setCounter] = useState(0)
+//   useEffect(() => {
+//     document.title=Counter
+//   console.log('useeffect hook is running');
   
-  }, [Counter])
+//   }, [Counter])
   
-  return (
-    <div>
-      use effect hook example
-      <h1>Counter: {Counter}</h1>
-      <button onClick={()=>setCounter(Counter+1)}>Increment</button>
-      <button onClick={()=>setCounter(Counter-1)}>Decrement</button>
-      <button onClick={()=>setCounter(0)}>Reset</button>
-    </div>
+//   return (
+//     <div>
+//       use effect hook example
+//       <h1>Counter: {Counter}</h1>
+//       <button onClick={()=>setCounter(Counter+1)}>Increment</button>
+//       <button onClick={()=>setCounter(Counter-1)}>Decrement</button>
+//       <button onClick={()=>setCounter(0)}>Reset</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+//fetch data from API using useEffect hook
+
+import React from 'react'
+import Fetch_Data_API from './components/Fetch_Data_API'
+
+const App=()=>{
+  return(
+    <>
+      <Fetch_Data_API/>
+    </>
   )
 }
 
 export default App
-
-
