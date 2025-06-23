@@ -7,6 +7,7 @@ export const Movies = () => {
 const filterbyCategory = (cat) => {
   setMovieList(movies.filter((data)=>data.category==cat))
 }
+
   return (
     <>
       <div className='my-3' style={{width:'1200px',margin:'auto'}}>
