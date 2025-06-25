@@ -1,5 +1,7 @@
 web dev start to end:
-Create npm vite
+
+
+npm create vite@latest
 
 npm i
 
