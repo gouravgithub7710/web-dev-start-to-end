@@ -1,9 +1,10 @@
 import React from 'react';
-const TodoIteam=()=>{
+const TodoIteam=({ task, isChecked, onCheckboxChange })=>{
 return(
   <div className='Todo-Iteam'>
-    <input type="checkbox" />
-    <p>Eat</p>
+    <input type="checkbox" checked={isChecked}
+        onChange={onCheckboxChange} />
+    <p>{task}</p>
     <p>...</p>
   </div>
 )
