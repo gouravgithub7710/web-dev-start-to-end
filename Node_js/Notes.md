@@ -13,3 +13,6 @@
   Manage dependencies in your project
   Run useful scripts for building, testing, etc.
 
+# Postman
+  Postman is a tool used to test APIs.
+  It lets you send HTTP requests (like GET, POST, PUT, DELETE) to your server and see the response — without writing any frontend code.
