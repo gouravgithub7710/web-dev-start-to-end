@@ -14,6 +14,7 @@
   Run useful scripts for building, testing, etc.
 
     npm init -- creatre package.json file 
+    npm i express -- for install express form npm 
 
 # Postman
   Postman is a tool used to test APIs.
