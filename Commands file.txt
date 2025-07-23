@@ -1,0 +1,6 @@
+npm init --- create package.json file 
+
+
+
+terminal file :
+pwd: present working directory for checking in which directory we are
