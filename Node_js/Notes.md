@@ -15,6 +15,7 @@
 
     npm init -- creatre package.json file 
     npm i express -- for install express form npm 
+    npm i nodemon -- automatically restarting the node application
 
 # Postman
   Postman is a tool used to test APIs.

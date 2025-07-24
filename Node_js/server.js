@@ -2,6 +2,6 @@
   return a+b;
  }
 
- var result =add(2,3);
+ var result =add(5,10);
  console.log(result);
  

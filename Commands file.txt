@@ -1,6 +1,7 @@
 npm init --- create package.json file 
 npm i -- for install node modules
 npm i express -- for install express form npm 
+npm i nodemon -- automatically restarting the node application
 
 
 
