@@ -5,5 +5,7 @@
  var result =add(5,10);
  console.log(result);
 
- // import 
+ // import { add } from './math.js';
+// console.log(add(5, 10));   
+
  
