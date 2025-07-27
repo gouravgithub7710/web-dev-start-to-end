@@ -48,14 +48,28 @@
 
 //-----------------------------------------------------------------
 
-const notes = require('./notes.js');
+// const notes = require('./notes.js');
 
+// console.log('Server is Running!');
+
+// var age = notes.age;
+// console.log(`Age from notes.js: ${age}`);
+
+// var sum = notes.addNumber(5, 10);
+// console.log(`Sum from notes.js: ${sum}`);
+
+
+//-------------------------------------------------------------
+
+var _ = require('lodash');
 console.log('Server is Running!');
 
-var age = notes.age;
-console.log(`Age from notes.js: ${age}`);
+var data = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,1,2,3,4,5,6,7,8,9,10];
 
-var sum = notes.addNumber(5, 10);
-console.log(`Sum from notes.js: ${sum}`);
+var filter = _.uniq(data);
+console.log(`Unique values: ${filter}`);// [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+console.log(_.isString('Hello World'));//true
+console.log(_.isString(12345)); //false
 
 
