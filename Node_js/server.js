@@ -52,4 +52,10 @@ const notes = require('./notes.js');
 
 console.log('Server is Running!');
 
+var age = notes.age;
+console.log(`Age from notes.js: ${age}`);
+
+var sum = notes.addNumber(5, 10);
+console.log(`Sum from notes.js: ${sum}`);
+
 
