@@ -16,6 +16,8 @@
     npm init -- creatre package.json file 
     npm i express -- for install express form npm 
     npm i nodemon -- automatically restarting the node application
+    npm i lodash  -- 
+                    Lodash is a popular JavaScript utility library that provides helper functions for common programming tasks like: Working with arrays, objects, strings, and numbers
 
 # Postman
   Postman is a tool used to test APIs.
