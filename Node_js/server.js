@@ -21,3 +21,8 @@ console.log(addation2digit(100,200));
  console.log("Anonymous function result: " + (a + b));
  
 })(10,20);
+
+(function callback()
+{
+  console.log("This is a callback function");
+})();
