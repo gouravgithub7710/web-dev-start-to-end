@@ -5,14 +5,19 @@
  var result =add(5,10);
  console.log(result);
 
- // import { add } from './math.js';
-// console.log(add(5, 10));   
+var addidation = function(a,b){
+  return a+b;
+}
 
-// The above code is a simple function to add two numbers and log the result.
-// The commented-out import statement suggests that this code might be part of a larger module system.
+console.log(addidation(20,30));
 
-// If you want to use the add function from another file, you can uncomment the import statement
-// and ensure that the file is set up to support ES6 modules, or use a bund
-
-
+var addation2digit = (a,b) => {
+  return a+b;
+}
+console.log(addation2digit(100,200));
  
+
+(function(a,b){
+ console.log("Anonymous function result: " + (a + b));
+ 
+})(10,20);
