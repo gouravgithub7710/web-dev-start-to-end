@@ -27,19 +27,29 @@
 //   console.log("This is a callback function");
 // })();
 
-const { log } = require('console');
-var fs = require('fs');
-var os = require('os');
+//-------------------------------------------------------------------
 
-var user = os.userInfo();
-console.log(user.username);
+// const { log } = require('console');
+// var fs = require('fs');
+// var os = require('os');
 
-console.log(os);
+// var user = os.userInfo();
+// console.log(user.username);
+
+// console.log(os);
 
 
-fs.appendFile('greeting.txt', `Hello ${user.username}!\n`, () => {
-  console.log('File created successfully!');
-});
+// fs.appendFile('greeting.txt', `Hello ${user.username}!\n`, () => {
+//   console.log('File created successfully!');
+// });
 
-console.log(fs);
+// console.log(fs);
+
+
+//-----------------------------------------------------------------
+
+const notes = require('./notes.js');
+
+console.log('Server is Running!');
+
 
