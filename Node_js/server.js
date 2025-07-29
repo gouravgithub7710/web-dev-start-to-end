@@ -93,3 +93,15 @@
 
 // console.log(jsonString);
 // // Output: {"name":"Gourav","age":21,"isStudent":true}
+
+//-----------------------------------------------------
+
+import express from 'express'
+
+const app = express()
+
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
+
+app.listen(3000)
