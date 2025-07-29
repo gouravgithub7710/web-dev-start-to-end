@@ -26,3 +26,13 @@
   # What is Server
   A server is a computer or system that provides data, services, or resources to other computers (called clients) over a network.
   It listens to requests from clients and responds with the requested information, like websites or files.
+
+  # JSON
+          JSON (JavaScript Object Notation) is a lightweight data format used to store and exchange data between a server and a client.
+
+        👉 It is easy to read and write, and looks like a simple collection of key-value pairs, like this:
+        {
+          "name": "Gourav",
+          "age": 21,
+          "isStudent": true
+        }
