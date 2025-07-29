@@ -48,3 +48,18 @@
   It tells the system what data or action you want.
   Each endpoint does a specific task like getting user info or posting data.
   Example: https://api.weather.com/current?city=Delhi is an endpoint to get Delhi’s weather.
+
+# What is Express.js?
+    Express.js is a lightweight and fast web framework for Node.js.
+    It helps you build web servers and APIs easily using JavaScript.
+    You can handle routes, requests, and responses with very little code.
+    It’s widely used to create backend for web and mobile apps.
+
+          const express = require('express');
+          const app = express();
+
+          app.get('/', (req, res) => {
+            res.send('Hello, World!');
+          });
+          app.listen(3000);
+      This code creates a server that runs on http://localhost:3000 and shows "Hello, World!" when you visit it.
