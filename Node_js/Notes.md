@@ -14,7 +14,7 @@
   Run useful scripts for building, testing, etc.
 
     npm init -- creatre package.json file 
-    npm i express -- for install express form npm 
+    npm i express -- for install express from npm 
     npm i nodemon -- automatically restarting the node application
     npm i lodash  -- 
                     Lodash is a popular JavaScript utility library that provides helper functions for common programming tasks like: Working with arrays, objects, strings, and numbers
@@ -22,3 +22,7 @@
 # Postman
   Postman is a tool used to test APIs.
   It lets you send HTTP requests (like GET, POST, PUT, DELETE) to your server and see the response — without writing any frontend code.
+
+  # What is Server
+  A server is a computer or system that provides data, services, or resources to other computers (called clients) over a network.
+  It listens to requests from clients and responds with the requested information, like websites or files.
