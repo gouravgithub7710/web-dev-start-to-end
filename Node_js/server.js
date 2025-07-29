@@ -61,15 +61,35 @@
 
 //-------------------------------------------------------------
 
-var _ = require('lodash');
-console.log('Server is Running!');
+// var _ = require('lodash');
+// console.log('Server is Running!');
 
-var data = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,1,2,3,4,5,6,7,8,9,10];
+// var data = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,1,2,3,4,5,6,7,8,9,10];
 
-var filter = _.uniq(data);
-console.log(`Unique values: ${filter}`);// [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+// var filter = _.uniq(data);
+// console.log(`Unique values: ${filter}`);// [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 
-console.log(_.isString('Hello World'));//true
-console.log(_.isString(12345)); //false
+// console.log(_.isString('Hello World'));//true
+// console.log(_.isString(12345)); //false
+
+//-------------------------------------------------
+
+// let jsonString = '{"name":"Gourav","age":21,"isStudent":true}';
+
+// let obj = JSON.parse(jsonString); // Convert JSON string to JS object
+
+// console.log(obj.name);     // Output: Gourav
+// console.log(obj.age);      // Output: 21
+// console.log(obj.isStudent); // Output: true
 
 
+// let student = {
+//   name: "Gourav",
+//   age: 21,
+//   isStudent: true
+// };
+
+// let jsonString = JSON.stringify(student);  // Convert object to JSON string
+
+// console.log(jsonString);
+// // Output: {"name":"Gourav","age":21,"isStudent":true}
