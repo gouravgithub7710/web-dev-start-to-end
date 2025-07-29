@@ -36,3 +36,15 @@
           "age": 21,
           "isStudent": true
         }
+
+#  What is an API?
+        An API (Application Programming Interface) lets two software programs talk to each other.
+        It allows you to send or get data from another system or server.
+        APIs are used in apps like weather, login with Google, etc.
+        Example: A website uses an API to show live weather from a weather service.
+
+# What is an API Endpoint?
+  An endpoint is a specific URL where an API listens for requests.
+  It tells the system what data or action you want.
+  Each endpoint does a specific task like getting user info or posting data.
+  Example: https://api.weather.com/current?city=Delhi is an endpoint to get Delhi’s weather.
