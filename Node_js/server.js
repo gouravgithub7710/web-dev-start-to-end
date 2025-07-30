@@ -104,6 +104,13 @@ app.get('/', (req, res) => {
   res.send('Hello, How can i help you?')
 })
 
+app.get('/about', (req, res) => {
+  res.send('This is about page')
+})
+
+app.get('/contact', (req, res) => {
+  res.send('This is contact page')
+})  
 app.listen(3000)
 
 //---------------------------------------------------------------
