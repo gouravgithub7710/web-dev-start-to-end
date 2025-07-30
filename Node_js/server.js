@@ -111,6 +111,8 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
   res.send('This is contact page')
 })  
-app.listen(3000)
+app.listen(3000,()=>{
+  console.log('Server is running on port 3000')
+})
 
 //---------------------------------------------------------------
