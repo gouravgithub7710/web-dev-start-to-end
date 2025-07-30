@@ -63,3 +63,47 @@
           });
           app.listen(3000);
       This code creates a server that runs on http://localhost:3000 and shows "Hello, World!" when you visit it.
+
+//-------------------------------------------------------------------------------------------
+# Methods to share data --  HTTP Methods in Node.js (Express.js)
+
+| Method   | Purpose (Kaam)        | Route Example                  | Use Case                           |
+| -------- | --------------------- | ------------------------------ | ---------------------------------- |
+| `GET`    | Data **fetch** karna  | `app.get('/api/users')`        | Server se users ki list lena       |
+| `POST`   | Naya data **bhejna**  | `app.post('/api/users')`       | Naya user create karna             |
+| `PATCH`  | Data **update** karna | `app.patch('/api/users/:id')`  | Ek user ka name/email update karna |
+| `DELETE` | Data **delete** karna | `app.delete('/api/users/:id')` | Ek specific user ko delete karna   |
+
+
+              // 1. GET
+              app.get("/api/users", (req, res) => {
+                res.json(["user1", "user2"]);
+              });
+
+              app.post(...) → Jab frontend POST request bhejta hai /api/users pe (naya user create karne ke liye), to ye route call hota hai.
+
+              req.body → Client ne jo data bheja (e.g. name), vo yahan milta hai.
+
+              const { name } = req.body; → name ko body se extract kar rahe hain.
+
+              res.send("User created") → Server ek success message bhej raha hai.
+
+              // 2. POST
+              app.post("/api/users", (req, res) => {
+                const { name } = req.body;
+                res.send("User created");
+              });
+
+              // 3. PATCH
+              app.patch("/api/users/:id", (req, res) => {
+                const id = req.params.id;
+                res.send(`User ${id} updated`);
+              });
+
+              // 4. DELETE
+              app.delete("/api/users/:id", (req, res) => {
+                const id = req.params.id;
+                res.send(`User ${id} deleted`);
+              });
+
+//----------------------------------------------------------------------------------------
