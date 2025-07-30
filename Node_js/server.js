@@ -111,6 +111,16 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
   res.send('This is contact page')
 })  
+
+app.get('/dalbati', (req, res) => {
+  var customized_DalBati = {
+    name: 'Dal Bati',
+    price: 150,
+    description: 'A traditional Rajasthani dish made of wheat flour balls served with spicy dal.'
+  };
+  res.send(customized_DalBati);
+})
+
 app.listen(3000,()=>{
   console.log('Server is running on port 3000')
 })
