@@ -111,6 +111,9 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
   res.send('This is contact page')
 })  
+app.get('/services', (req, res) => {
+  res.send('This is services page')
+})
 
 app.get('/dalbati', (req, res) => {
   var customized_DalBati = {
